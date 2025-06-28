@@ -962,7 +962,7 @@ pw_diversity_curator = {
 	}
 
 	resources = {
-		category = planet_culture_workers
+		category = planet_bureaucrat
 		produces = {
 			unity = 5
 			society_research = 6
@@ -1128,7 +1128,7 @@ pw_degeneracy_curator = {
 	}
 
 	resources = {
-		category = planet_culture_workers
+		category = planet_bureaucrat
 		produces = {
 			unity = 5
 			society_research = 6
@@ -2127,7 +2127,7 @@ pw_preserver = {
 	}
 
 	resources = {
-		category = planet_culture_workers
+		category = planet_bureaucrat
 		produces = {
 			unity = 2
 			society_research = 4

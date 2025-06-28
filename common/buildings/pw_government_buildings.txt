@@ -1073,7 +1073,7 @@ pw_building_panopticon = {
 			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
 		}
 		modifier = {
-			job_culture_worker_add = 200
+			job_bureaucrat_add = 200
 		}
 	}
 

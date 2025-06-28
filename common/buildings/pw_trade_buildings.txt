@@ -642,7 +642,7 @@ pw_building_department_of_xenoeconomics = {
 		AMOUNT = 1
 	}
 	inline_script = {
-		script = jobs/pw/culture_worker_add
+		script = jobs/pw/bureaucrat_add
 		OWNER_CONDITION = "is_megacorp = yes"
 		AMOUNT = 2
 	}

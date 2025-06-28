@@ -253,7 +253,7 @@ pw_building_meditation_garden = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 100
+			job_bureaucrat_add = 100
 		}
 	}
 
@@ -703,7 +703,7 @@ pw_building_exotic_beauty_center = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 100
+			job_bureaucrat_add = 100
 		}
 	}
 
@@ -823,7 +823,7 @@ pw_building_national_pride_gallery = {
 			}
 		}
 		modifier = {
-			job_culture_worker_add = 100
+			job_bureaucrat_add = 100
 		}
 	}
 

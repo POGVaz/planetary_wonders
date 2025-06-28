@@ -1,6 +1,6 @@
 # Usage:
 #inline_script = {
-#	script = jobs/pw/culture_worker_add
+#	script = jobs/pw/bureaucrat_add
 #	OWNER_CONDITION = "is_egalitarian = yes"
 #	AMOUNT = 1
 #}
@@ -14,7 +14,7 @@ triggered_planet_modifier = {
 			is_megacorp = no
 		}
 	}
-	job_culture_worker_add = 100
+	job_bureaucrat_add = 100
 	mult = $AMOUNT$
 }
 
