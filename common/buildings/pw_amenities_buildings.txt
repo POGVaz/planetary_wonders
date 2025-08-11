@@ -764,7 +764,7 @@ pw_building_festival_plaza = {
 	# 	}
 	# 	modifier = {
 	# 		job_politician_add = 100
-	# 		job_culture_worker_add = 300
+	# 		job_bureaucrat_add = 300
 	# 	}
 	# }
 	
@@ -787,7 +787,7 @@ pw_building_festival_plaza = {
 		AMOUNT = 1
 	}
 	inline_script = {
-		script = jobs/pw/culture_worker_add
+		script = jobs/pw/bureaucrat_add
 		OWNER_CONDITION = "is_pacifist = yes"
 		AMOUNT = 3
 	}
@@ -1134,7 +1134,7 @@ pw_building_nostalgia_paradise = {
 	# 		owner = { is_megacorp = no }
 	# 	}
 	# 	modifier = {
-	# 		job_culture_worker_add = 200
+	# 		job_bureaucrat_add = 200
 	# 	}
 	# }
 	
@@ -1155,7 +1155,7 @@ pw_building_nostalgia_paradise = {
 		AMOUNT = 1
 	}
 	inline_script = {
-		script = jobs/pw/culture_worker_add
+		script = jobs/pw/bureaucrat_add
 		OWNER_CONDITION = ""
 		AMOUNT = 2
 	}

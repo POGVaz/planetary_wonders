@@ -3,14 +3,14 @@
 #	script = jobs/pw/death_chronicler_add_pavilion
 #	AMOUNT = 1
 #}
-# Note: memorialist will have job_culture_worker_per_pop and job_death_chronicler_add.
+# Note: memorialist will have job_bureaucrat_per_pop and job_death_chronicler_add.
 triggered_planet_modifier = {
 	potential = {
 		exists = owner
 		owner = { is_megacorp = no }
 	}
 	modifier = {
-		job_culture_worker_per_pop = @pw_job_per_25_pop
+		job_bureaucrat_per_pop = @pw_job_per_25_pop
 	}
 }
 

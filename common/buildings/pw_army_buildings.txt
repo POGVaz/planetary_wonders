@@ -842,7 +842,7 @@ pw_building_martial_avenue = {
 	# 	}
 	# 	modifier = {
 	# 		job_politician_add = 100
-	# 		job_culture_worker_add = 200
+	# 		job_bureaucrat_add = 200
 	# 	}
 	# }
 	
@@ -865,7 +865,7 @@ pw_building_martial_avenue = {
 		AMOUNT = 1
 	}
 	inline_script = {
-		script = jobs/pw/culture_worker_add
+		script = jobs/pw/bureaucrat_add
 		OWNER_CONDITION = "is_militarist = yes"
 		AMOUNT = 2
 	}

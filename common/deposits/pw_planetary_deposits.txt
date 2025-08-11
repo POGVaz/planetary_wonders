@@ -614,7 +614,7 @@ pw_d_guardian_angel_scenic_set_piece = {
 		}
 		modifier = {
 			planet_amenities_add = 100
-			job_culture_worker_add = 100
+			job_bureaucrat_add = 100
 		}
 	}
 

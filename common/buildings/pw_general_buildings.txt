@@ -47,7 +47,7 @@ pw_building_polyhedron = {
 		}
 		modifier = {
 			inline_script = { script = jobs/pw/researcher_add AMOUNT = 100 }
-			job_culture_worker_add = 200
+			job_bureaucrat_add = 200
 		}
 	}
 

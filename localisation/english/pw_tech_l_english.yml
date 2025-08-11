@@ -114,7 +114,7 @@
 
     pw_tech_panopticon_penal_industries: "$pw_panopticon$: Penal Industries"
     pw_tech_panopticon_penal_industries_desc: "If factories already resemble prisons, we should outfit prison to allow for industrial labor and employ prisoners to boost our production."
-    pw_tech_panopticon_penal_industries_tooltip: "$pw_panopticon$: Adds §G+1§! Metallurgist and §G+1§! Artisan Jobs."
+    pw_tech_panopticon_penal_industries_tooltip: "$pw_panopticon$: Adds §G+100§! Metallurgist and §G+100§! Artisan Jobs."
     pw_tech_panopticon_criminal_reintegration: "$pw_panopticon$: Criminal Reintegration"
     pw_tech_panopticon_criminal_reintegration_desc: "A program of cultural development in the Panopticon shall not only provide new and diverse artistic creations, but reintegrate prisoners with the values of our society, without the need for punishment."
     pw_tech_panopticon_criminal_reintegration_tooltip: "$pw_panopticon$: Adds §G+2§! Cultural Worker Jobs."
@@ -129,7 +129,7 @@
     pw_tech_panopticon_repentance_preaching_tooltip: "$pw_panopticon$: Adds §G+2§! Priest Jobs."
     pw_tech_panopticon_prisoner_subjects: "$pw_panopticon$: Prisoner Subjects"
     pw_tech_panopticon_prisoner_subjects_desc: "The pursuit of science requires sacrifices, and there is plenty of expendable personnel to be found among prison inmates. The regular use of strong amnestic shall maintain high standards for test controls and security."
-    pw_tech_panopticon_prisoner_subjects_tooltip: "$pw_panopticon$: Adds §G+1§! Researcher Job."
+    pw_tech_panopticon_prisoner_subjects_tooltip: "$pw_panopticon$: Adds §G+100§! Researcher Job."
     pw_tech_panopticon_racialized_sentencing: "$pw_panopticon$: Racialized Sentencing"
     pw_tech_panopticon_racialized_sentencing_desc: "Even if not outright banned, manipulation of laws and sentences can make alien cultural practices legally impossible."
     pw_tech_panopticon_galpol_detention_center: "$pw_panopticon$: Galpol Detention Center"

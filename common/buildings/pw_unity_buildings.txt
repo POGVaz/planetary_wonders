@@ -164,7 +164,7 @@ pw_building_pavilion_of_wonders = {
 	# 		owner = { is_megacorp = no }
 	# 	}
 	# 	modifier = {
-	# 		job_culture_worker_per_pop = @pw_job_per_25_pop
+	# 		job_bureaucrat_per_pop = @pw_job_per_25_pop
 	# 	}
 	# }
 	
@@ -196,7 +196,7 @@ pw_building_pavilion_of_wonders = {
 	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
 	# 	}
 	# 	modifier = {
-	# 		job_culture_worker_add = 100
+	# 		job_bureaucrat_add = 100
 	# 	}
 	# }
 	
@@ -621,7 +621,7 @@ pw_building_fair_of_worlds = {
 	# 		owner = { is_megacorp = no }
 	# 	}
 	# 	modifier = {
-	# 		job_culture_worker_per_pop = @pw_job_per_25_pop
+	# 		job_bureaucrat_per_pop = @pw_job_per_25_pop
 	# 	}
 	# }
 	
@@ -653,7 +653,7 @@ pw_building_fair_of_worlds = {
 	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
 	# 	}
 	# 	modifier = {
-	# 		job_culture_worker_add = 200
+	# 		job_bureaucrat_add = 200
 	# 	}
 	# }
 	
@@ -1252,7 +1252,7 @@ pw_building_museum_of_the_grotesque = {
 	# 		owner = { is_megacorp = no }
 	# 	}
 	# 	modifier = {
-	# 		job_culture_worker_per_pop = @pw_job_per_25_pop
+	# 		job_bureaucrat_per_pop = @pw_job_per_25_pop
 	# 	}
 	# }
 	
@@ -1284,7 +1284,7 @@ pw_building_museum_of_the_grotesque = {
 	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
 	# 	}
 	# 	modifier = {
-	# 		job_culture_worker_add = 200
+	# 		job_bureaucrat_add = 200
 	# 	}
 	# }
 	
@@ -2433,7 +2433,7 @@ pw_building_unhallowed_necropolis = {
 	# 		NOT = { owner = { has_valid_civic = civic_memorialist }}
 	# 	}
 	# 	modifier = {
-	# 		job_culture_worker_add = 200
+	# 		job_bureaucrat_add = 200
 	# 	}
 	# }
 	
@@ -2497,7 +2497,7 @@ pw_building_unhallowed_necropolis = {
 			NOT = { owner = { has_valid_civic = civic_death_cult_corporate }}
 		}
 		modifier = {
-			job_culture_worker_add = 200
+			job_bureaucrat_add = 200
 		}
 	}
 
