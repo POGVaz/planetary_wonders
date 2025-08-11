@@ -43,7 +43,7 @@ pw_mining_director = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = {
+			owner = {
 				OR = {
 					has_trait = trait_robot_domestic_protocols
 					has_trait = trait_charismatic
@@ -57,7 +57,7 @@ pw_mining_director = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = { has_trait = trait_repugnant }
+			owner = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_add = -8
@@ -174,7 +174,7 @@ pw_energy_director = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = {
+			owner = {
 				OR = {
 					has_trait = trait_robot_domestic_protocols
 					has_trait = trait_charismatic
@@ -188,7 +188,7 @@ pw_energy_director = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = { has_trait = trait_repugnant }
+			owner = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_add = -8
@@ -325,7 +325,7 @@ pw_agriculture_director = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = {
+			owner = {
 				OR = {
 					has_trait = trait_robot_domestic_protocols
 					has_trait = trait_charismatic
@@ -339,7 +339,7 @@ pw_agriculture_director = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = { has_trait = trait_repugnant }
+			owner = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_add = -8
@@ -350,7 +350,7 @@ pw_agriculture_director = {
 		potential = {
 			exists = owner
 			owner = { has_valid_civic = civic_agrarian_idyll }
-			prev = {
+			owner = {
 				OR = {
 					has_trait = trait_robot_domestic_protocols
 					has_trait = trait_charismatic
@@ -366,7 +366,7 @@ pw_agriculture_director = {
 		potential = {
 			exists = owner
 			owner = { has_valid_civic = civic_agrarian_idyll }
-			prev = { has_trait = trait_repugnant }
+			owner = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_add = -8
@@ -841,7 +841,7 @@ pw_poly_artisan = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = {
+			owner = {
 				OR = {
 					has_trait = trait_robot_domestic_protocols
 					has_trait = trait_charismatic
@@ -855,7 +855,7 @@ pw_poly_artisan = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = { has_trait = trait_repugnant }
+			owner = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_add = -40
@@ -962,7 +962,7 @@ pw_diversity_curator = {
 	}
 
 	resources = {
-		category = planet_bureaucrat
+		category = planet_bureaucrats
 		produces = {
 			unity = 5
 			society_research = 6
@@ -978,7 +978,7 @@ pw_diversity_curator = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = {
+			owner = {
 				OR = {
 					has_trait = trait_robot_domestic_protocols
 					has_trait = trait_charismatic
@@ -991,7 +991,7 @@ pw_diversity_curator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			prev = { has_trait = trait_repugnant }
+			owner = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_add = -40
@@ -1128,7 +1128,7 @@ pw_degeneracy_curator = {
 	}
 
 	resources = {
-		category = planet_bureaucrat
+		category = planet_bureaucrats
 		produces = {
 			unity = 5
 			society_research = 6
@@ -1144,7 +1144,7 @@ pw_degeneracy_curator = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = {
+			owner = {
 				OR = {
 					has_trait = trait_robot_domestic_protocols
 					has_trait = trait_charismatic
@@ -1157,7 +1157,7 @@ pw_degeneracy_curator = {
 	}
 	triggered_planet_modifier = {
 		potential = {
-			prev = { has_trait = trait_repugnant }
+			owner = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_add = -40
@@ -1473,7 +1473,7 @@ pw_master_archivist = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = {
+			owner = {
 				OR = {
 					has_trait = trait_robot_domestic_protocols
 					has_trait = trait_charismatic
@@ -1487,7 +1487,7 @@ pw_master_archivist = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = { has_trait = trait_repugnant }
+			owner = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_add = -40
@@ -1819,7 +1819,7 @@ pw_relic_keeper = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = {
+			owner = {
 				OR = {
 					has_trait = trait_robot_domestic_protocols
 					has_trait = trait_charismatic
@@ -1833,7 +1833,7 @@ pw_relic_keeper = {
 
 	triggered_planet_modifier = {
 		potential = {
-			prev = { has_trait = trait_repugnant }
+			owner = { has_trait = trait_repugnant }
 		}
 		modifier = {
 			planet_amenities_add = -40
@@ -2127,7 +2127,7 @@ pw_preserver = {
 	}
 
 	resources = {
-		category = planet_bureaucrat
+		category = planet_bureaucrats
 		produces = {
 			unity = 2
 			society_research = 4
