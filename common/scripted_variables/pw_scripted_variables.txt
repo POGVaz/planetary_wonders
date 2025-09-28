@@ -243,4 +243,6 @@
 @pw_event_casualty_3 = 30
 @pw_event_casualty_4 = 40
 
+# It "has been" vanilla scripted variable. But removed at Stellaris 4.0.
+@ap_technological_ascendancy_rare_tech = 1.5
 
