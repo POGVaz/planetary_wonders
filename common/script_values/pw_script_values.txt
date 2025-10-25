@@ -418,3 +418,21 @@ pw_d_hidden_mantle_factory_foundry_jobs = {
 		}
 	}
 }
+
+# usage: pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_particle_supercollider_experiment_completed|
+# this = owner
+pw_building_pw_researcher_jobs = {
+	base = 400
+	modifier = {
+		add = 100
+		has_country_flag = $COUNTRY_FLAG$_1
+	}
+	modifier = {
+		add = 100
+		has_country_flag = $COUNTRY_FLAG$_2
+	}
+	modifier = {
+		add = 100
+		has_country_flag = $COUNTRY_FLAG$_3
+	}
+}
