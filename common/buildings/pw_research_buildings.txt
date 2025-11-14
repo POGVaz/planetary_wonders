@@ -135,6 +135,8 @@ pw_building_particle_supercollider = {
 		}
 	}
 
+	inline_script = { script = jobs/physicists_add AMOUNT = 400 }
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -143,129 +145,31 @@ pw_building_particle_supercollider = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
-			job_pw_researcher_particle_supercollider_add = 400
 		}
 	}
 
-	#Additional Jobs from experiments
+	#It includes additional Jobs from experiments
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_researcher_particle_supercollider_add = 100
+			job_pw_researcher_particle_supercollider_add = 1
 		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_researcher_particle_supercollider_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_researcher_particle_supercollider_add = 100
-		}
+		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_particle_supercollider_experiment_completed|
 	}
 
-	#Hive Jobs
+	#Gestalt Jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_brain_drone_particle_supercollider_add = 400
+			job_pw_calculator_particle_supercollider_add = 1
 		}
-	}
-
-	#Additional Jobs from experiments
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_1 }
-		}
-		modifier = {
-			job_pw_brain_drone_particle_supercollider_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_brain_drone_particle_supercollider_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_brain_drone_particle_supercollider_add = 100
-		}
-	}
-
-	#Machine Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_calculator_particle_supercollider_add = 400
-		}
-	}
-
-	#Additional Jobs from experiments
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_1 }
-		}
-		modifier = {
-			job_pw_calculator_particle_supercollider_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_calculator_particle_supercollider_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_particle_supercollider_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_calculator_particle_supercollider_add = 100
-		}
+		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_particle_supercollider_experiment_completed|
 	}
 
 	#Stability Bonus
@@ -584,6 +488,8 @@ pw_building_interdimensional_collider = {
 		}
 	}
 
+	inline_script = { script = jobs/physicists_add AMOUNT = 400 }
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -592,31 +498,17 @@ pw_building_interdimensional_collider = {
 		}
 		modifier = {
 			job_politician_add = 200 # head researcher
-			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_particle_supercollider_add = 800
 		}
 	}
 
-	#Hive Jobs
+	#Gestalt Jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_brain_drone_particle_supercollider_add = 1000
-		}
-	}
-
-	#Machine Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_particle_supercollider_add = 1000
 		}
 	}
@@ -927,6 +819,8 @@ pw_building_domed_city = {
 		}
 	}
 
+	inline_script = { script = jobs/biologists_add AMOUNT = 400 }
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -935,132 +829,41 @@ pw_building_domed_city = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
-			job_pw_researcher_domed_city_add = 400
 			job_pw_domed_city_test_subject_add = 100
 		}
 	}
 
-	#Additional Jobs from experiments
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_researcher_domed_city_add = 100
+			job_pw_researcher_domed_city_add = 1
 		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_researcher_domed_city_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_researcher_domed_city_add = 100
-		}
+		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_domed_city_experiment_completed|
 	}
 
-	#Hive Jobs
+	#Gestalt Jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_brain_drone_domed_city_add = 400
 			job_pw_domed_city_subject_drone_add = 100
 		}
 	}
 
-	#Additional Jobs from experiments
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_brain_drone_domed_city_add = 100
+			job_pw_calculator_domed_city_add = 1
 		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_brain_drone_domed_city_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_brain_drone_domed_city_add = 100
-		}
-	}
-
-	#Machine Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_calculator_domed_city_add = 400
-			job_pw_domed_city_subject_drone_add = 100
-		}
-	}
-
-	#Additional Jobs from experiments
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
-		}
-		modifier = {
-			job_pw_calculator_domed_city_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_calculator_domed_city_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_calculator_domed_city_add = 100
-		}
+		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_domed_city_experiment_completed|
 	}
 
 	#Stability Bonus
@@ -1369,6 +1172,8 @@ pw_building_secluded_sector = {
 		}
 	}
 
+	inline_script = { script = jobs/biologists_add AMOUNT = 400 }
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -1377,132 +1182,41 @@ pw_building_secluded_sector = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
-			job_pw_researcher_domed_city_add = 400
 			job_pw_domed_city_test_subject_add = 100
 		}
 	}
 
-	#Additional Jobs from experiments
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_researcher_domed_city_add = 100
+			job_pw_researcher_domed_city_add = 1
 		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_researcher_domed_city_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_researcher_domed_city_add = 100
-		}
+		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_domed_city_experiment_completed|
 	}
 
-	#Hive Jobs
+	#Gestalt Jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_brain_drone_domed_city_add = 400
 			job_pw_domed_city_subject_drone_add = 100
 		}
 	}
 
-	#Additional Jobs from experiments
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			job_pw_brain_drone_domed_city_add = 100
+			job_pw_calculator_domed_city_add = 1
 		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_brain_drone_domed_city_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_brain_drone_domed_city_add = 100
-		}
-	}
-
-	#Machine Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_calculator_domed_city_add = 400
-			job_pw_domed_city_subject_drone_add = 100
-		}
-	}
-
-	#Additional Jobs from experiments
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_1 }
-		}
-		modifier = {
-			job_pw_calculator_domed_city_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_calculator_domed_city_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_domed_city_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_calculator_domed_city_add = 100
-		}
+		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_domed_city_experiment_completed|
 	}
 
 	#Stability Bonus
@@ -1822,6 +1536,8 @@ pw_building_psionic_observatory = {
 		}
 	}
 
+	inline_script = { script = jobs/biologists_add AMOUNT = 400 }
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -1830,33 +1546,18 @@ pw_building_psionic_observatory = {
 		}
 		modifier = {
 			job_politician_add = 200 # head researcher
-			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_domed_city_add = 800
 			job_pw_domed_city_test_subject_add = 100
 		}
 	}
 
-	#Hive Jobs
+	#Gestalt jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_brain_drone_domed_city_add = 1000
-			job_pw_domed_city_subject_drone_add = 100
-		}
-	}
-
-	#Machine Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_domed_city_add = 1000
 			job_pw_domed_city_subject_drone_add = 100
 		}
@@ -2183,6 +1884,8 @@ pw_building_abyssal_crater_test_site = {
 		}
 	}
 
+	inline_script = { script = jobs/engineers_add AMOUNT = 400 }
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -2191,129 +1894,30 @@ pw_building_abyssal_crater_test_site = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
-			job_pw_researcher_abyssal_crater_test_site_add = 400
 		}
 	}
 
-	#Additional Jobs from experiments
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 100
+			job_pw_researcher_abyssal_crater_test_site_add = 1
 		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 100
-		}
+		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_abyssal_crater_test_site_experiment_completed|
 	}
 
-	#Hive Jobs
+	#Gestalt jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_brain_drone_abyssal_crater_test_site_add = 400
+			job_pw_calculator_abyssal_crater_test_site_add = 1
 		}
-	}
-
-	#Additional Jobs from experiments
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
-		}
-		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 100
-		}
-	}
-
-	#Machine Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_calculator_abyssal_crater_test_site_add = 400
-		}
-	}
-
-	#Additional Jobs from experiments
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
-		}
-		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 100
-		}
+		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_abyssal_crater_test_site_experiment_completed|
 	}
 
 	#Stability Bonus
@@ -2606,6 +2210,7 @@ pw_building_abyssal_crater_test_site_habitat = {
 		}
 	}
 
+	inline_script = { script = jobs/engineers_add AMOUNT = 400 }
 
 	#Regular jobs
 	triggered_planet_modifier = {
@@ -2615,129 +2220,30 @@ pw_building_abyssal_crater_test_site_habitat = {
 		}
 		modifier = {
 			job_politician_add = 100 # head researcher
-			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
-			job_pw_researcher_abyssal_crater_test_site_add = 400
 		}
 	}
 
-	#Additional Jobs from experiments
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
 		}
 		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 100
+			job_pw_researcher_abyssal_crater_test_site_add = 1
 		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_researcher_abyssal_crater_test_site_add = 100
-		}
+		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_abyssal_crater_test_site_experiment_completed|
 	}
 
-	#Hive Jobs
+	#Gestalt jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_brain_drone_abyssal_crater_test_site_add = 400
+			job_pw_calculator_abyssal_crater_test_site_add = 1
 		}
-	}
-
-	#Additional Jobs from experiments
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
-		}
-		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_brain_drone_abyssal_crater_test_site_add = 100
-		}
-	}
-
-	#Machine Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_calculator_abyssal_crater_test_site_add = 400
-		}
-	}
-
-	#Additional Jobs from experiments
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_1 }
-		}
-		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_2 }
-		}
-		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 100
-		}
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = { has_country_flag = pw_abyssal_crater_test_site_experiment_completed_3 }
-		}
-		modifier = {
-			job_pw_calculator_abyssal_crater_test_site_add = 100
-		}
+		mult = owner.value:pw_building_pw_researcher_jobs|COUNTRY_FLAG|pw_abyssal_crater_test_site_experiment_completed|
 	}
 
 	#Stability Bonus
@@ -3041,6 +2547,8 @@ pw_building_metal_vivarium = {
 		}
 	}
 
+	inline_script = { script = jobs/engineers_add AMOUNT = 400 }
+
 	#Regular jobs
 	triggered_planet_modifier = {
 		potential = {
@@ -3049,31 +2557,17 @@ pw_building_metal_vivarium = {
 		}
 		modifier = {
 			job_politician_add = 200 # head researcher
-			inline_script = { script = jobs/pw/researcher_add AMOUNT = 400 }
 			job_pw_researcher_abyssal_crater_test_site_add = 800
 		}
 	}
 
-	#Hive Jobs
+	#Gestalt jobs
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = { is_hive_empire = yes }
+			owner = { is_gestalt = yes }
 		}
 		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
-			job_pw_brain_drone_abyssal_crater_test_site_add = 1000
-		}
-	}
-
-	#Machine Jobs
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			inline_script = { script = jobs/pw/calculator_add AMOUNT = 400 }
 			job_pw_calculator_abyssal_crater_test_site_add = 1000
 		}
 	}
@@ -3383,7 +2877,7 @@ pw_building_grand_archive = {
 			owner = { is_materialist = no }
 		}
 		modifier = {
-			inline_script = { script = jobs/pw/researcher_add AMOUNT = 600 }
+			inline_script = { script = jobs/pw/researcher_add AMOUNT = 200 }
 		}
 	}
 

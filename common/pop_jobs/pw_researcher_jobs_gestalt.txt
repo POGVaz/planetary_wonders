@@ -10,75 +10,8 @@ pw_brain_drone_particle_supercollider = {
 
 	tags = { research }
 
-	possible_pre_triggers = {
-		has_owner = yes
-		is_enslaved = no
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-
-	possible_precalc = can_fill_drone_job
-
 	possible = {
-		# drone_job_check_trigger = yes
-	}
-
-	resources = {
-		category = planet_researchers
-		produces = {
-			physics_research = 12
-		}
-		upkeep = {
-			minerals = 6
-			energy = 3
-		}
-	}
-
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_brain_drone_particle_supercollider|
-		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_intelligent
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_physicists
-			}
-		}
-		modifier = {
-			factor = 0.65
-			OR = {
-				has_trait = trait_syncretic_proles
-				has_trait = trait_presapient_proles
-			}
-		}
-		modifier = {
-			factor = 0.9
-			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
-		}
-		modifier = {
-			factor = 0
-			planet = {
-				owner = {
-					is_ai = yes
-					has_resource = { type = minerals amount < 500 }
-					has_monthly_income = {
-						resource = minerals
-						value < 25
-					}
-				}
-			}
-		}
+		always = no
 	}
 }
 
@@ -94,74 +27,8 @@ pw_brain_drone_domed_city = {
 	
 	tags = { research }
 
-	possible_pre_triggers = {
-		has_owner = yes
-		is_enslaved = no
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-
-	possible_precalc = can_fill_drone_job
-
 	possible = {
-		# drone_job_check_trigger = yes
-	}
-
-	resources = {
-		category = planet_researchers
-		produces = {
-			society_research = 12
-		}
-		upkeep = {
-			minerals = 10
-		}
-	}
-
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_brain_drone_domed_city|
-		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_intelligent
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_sociologists
-			}
-		}
-		modifier = {
-			factor = 0.65
-			OR = {
-				has_trait = trait_syncretic_proles
-				has_trait = trait_presapient_proles
-			}
-		}
-		modifier = {
-			factor = 0.9
-			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
-		}
-		modifier = {
-			factor = 0
-			planet = {
-				owner = {
-					is_ai = yes
-					has_resource = { type = minerals amount < 500 }
-					has_monthly_income = {
-						resource = minerals
-						value < 25
-					}
-				}
-			}
-		}
+		always = no
 	}
 }
 
@@ -177,75 +44,8 @@ pw_brain_drone_abyssal_crater_test_site = {
 	
 	tags = { research }
 
-	possible_pre_triggers = {
-		has_owner = yes
-		is_enslaved = no
-		is_being_purged = no
-		is_being_assimilated = no
-		is_sapient = yes
-	}
-
-	possible_precalc = can_fill_drone_job
-
 	possible = {
-		# drone_job_check_trigger = yes
-	}
-
-	resources = {
-		category = planet_researchers
-		produces = {
-			engineering_research = 12
-		}
-		upkeep = {
-			minerals = 6
-			alloys = 1
-		}
-	}
-
-	weight = {
-		weight = @complex_drone_job_weight
-		mult = value:job_weights_research_modifier|JOB|pw_brain_drone_abyssal_crater_test_site|
-		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			has_trait = trait_intelligent
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_engineers
-			}
-		}
-		modifier = {
-			factor = 0.65
-			OR = {
-				has_trait = trait_syncretic_proles
-				has_trait = trait_presapient_proles
-			}
-		}
-		modifier = {
-			factor = 0.9
-			exists = owner
-			years_passed < 1
-			owner = { has_valid_civic = civic_machine_assimilator }
-			has_trait = trait_cybernetic
-		}
-		modifier = {
-			factor = 0
-			planet = {
-				owner = {
-					is_ai = yes
-					has_resource = { type = minerals amount < 500 }
-					has_monthly_income = {
-						resource = minerals
-						value < 25
-					}
-				}
-			}
-		}
+		always = no
 	}
 }
 
@@ -256,6 +56,22 @@ pw_calculator_particle_supercollider = {
 			condition_string = DRONE_JOB_TRIGGER
 			building_icon = pw_building_particle_supercollider
 			icon = pw_calculator_particle_supercollider
+		}
+		#Supercollider Brain Drone - auth_hive
+		swap_type = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					# is_wilderness_empire = no
+				}
+			}
+			name = pw_brain_drone_particle_supercollider
+			desc = pw_brain_drone_particle_supercollider
+			icon = pw_brain_drone_particle_supercollider
+			building_icon = pw_building_particle_supercollider
+			condition_string = DRONE_JOB_TRIGGER
+			weight = 50
 		}
 	}
 	
@@ -273,15 +89,32 @@ pw_calculator_particle_supercollider = {
 
 	possible = {
 		# drone_job_check_trigger = yes
+		can_think = yes
 	}
 
 	resources = {
-		category = planet_researchers
+		category = planet_physicists
 		produces = {
 			physics_research = 12
 		}
 		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = no
+				}
+			}
 			energy = 8
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+				}
+			}
+			minerals = 6
+			energy = 3
 		}
 	}
 
@@ -289,40 +122,22 @@ pw_calculator_particle_supercollider = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_research_modifier|JOB|pw_calculator_particle_supercollider|
 		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_trait = trait_robot_logic_engines
-				has_trait = trait_intelligent
-			}
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_physicists
-			}
-		}
-		modifier = {
 			factor = 0.9
 			exists = owner
 			years_passed < 1
 			owner = { has_valid_civic = civic_machine_assimilator }
 			has_trait = trait_cybernetic
 		}
-		modifier = {
-			factor = 0
-			planet = {
-				owner = {
-					is_ai = yes
-					has_resource = { type = minerals amount < 500 }
-					has_monthly_income = {
-						resource = minerals
-						value < 25
-					}
-				}
+	}
+
+	inline_script = "jobs/automodding_priority_research"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = complex_drone
+				AMOUNT = local_pop_amount
 			}
 		}
 	}
@@ -336,6 +151,22 @@ pw_calculator_domed_city = {
 			building_icon = pw_building_domed_city
 			icon = pw_calculator_domed_city
 		}
+		#Domed City Brain Drone - auth_hive
+		swap_type = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					# is_wilderness_empire = no
+				}
+			}
+			name = pw_brain_drone_domed_city
+			desc = pw_brain_drone_domed_city
+			icon = pw_brain_drone_domed_city
+			building_icon = pw_building_domed_city
+			condition_string = DRONE_JOB_TRIGGER
+			weight = 50
+		}
 	}
 	
 	tags = { research }
@@ -351,17 +182,33 @@ pw_calculator_domed_city = {
 	possible_precalc = can_fill_drone_job
 
 	possible = {
+		can_think = yes
 		# drone_job_check_trigger = yes
 	}
 
 	resources = {
-		category = planet_researchers
+		category = planet_biologists
 		produces = {
 			society_research = 12
 		}
 		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = no
+				}
+			}
 			energy = 6
 			minerals = 2
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+				}
+			}
+			minerals = 10
 		}
 	}
 
@@ -369,40 +216,22 @@ pw_calculator_domed_city = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_research_modifier|JOB|pw_calculator_domed_city|
 		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_trait = trait_robot_logic_engines
-				has_trait = trait_intelligent
-			}
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_sociologists
-			}
-		}
-		modifier = {
 			factor = 0.9
 			exists = owner
 			years_passed < 1
 			owner = { has_valid_civic = civic_machine_assimilator }
 			has_trait = trait_cybernetic
 		}
-		modifier = {
-			factor = 0
-			planet = {
-				owner = {
-					is_ai = yes
-					has_resource = { type = minerals amount < 500 }
-					has_monthly_income = {
-						resource = minerals
-						value < 25
-					}
-				}
+	}
+
+	inline_script = "jobs/automodding_priority_research"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = complex_drone
+				AMOUNT = local_pop_amount
 			}
 		}
 	}
@@ -416,6 +245,22 @@ pw_calculator_abyssal_crater_test_site = {
 			building_icon = pw_building_abyssal_crater_test_site
 			icon = pw_calculator_abyssal_crater_test_site
 		}
+		#Abyssal Crater Brain Drone - auth_hive
+		swap_type = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+					# is_wilderness_empire = no
+				}
+			}
+			name = pw_brain_drone_abyssal_crater_test_site
+			desc = pw_brain_drone_abyssal_crater_test_site
+			icon = pw_brain_drone_abyssal_crater_test_site
+			building_icon = pw_building_abyssal_crater_test_site
+			condition_string = DRONE_JOB_TRIGGER
+			weight = 50
+		}
 	}
 	
 	tags = { research }
@@ -432,15 +277,36 @@ pw_calculator_abyssal_crater_test_site = {
 
 	possible = {
 		# drone_job_check_trigger = yes
+		can_think = yes
 	}
 
 	resources = {
-		category = planet_researchers
+		category = planet_engineers
 		produces = {
 			engineering_research = 12
 		}
+		# upkeep = {
+		# 	energy = 6
+		# 	alloys = 1
+		# }
 		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = no
+				}
+			}
 			energy = 6
+			alloys = 1
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					is_hive_empire = yes
+				}
+			}
+			minerals = 6
 			alloys = 1
 		}
 	}
@@ -449,40 +315,22 @@ pw_calculator_abyssal_crater_test_site = {
 		weight = @complex_drone_job_weight
 		mult = value:job_weights_research_modifier|JOB|pw_calculator_abyssal_crater_test_site|
 		modifier = {
-			factor = 3
-			has_trait = trait_erudite
-		}
-		modifier = {
-			factor = 2
-			OR = {
-				has_trait = trait_robot_logic_engines
-				has_trait = trait_intelligent
-			}
-		}
-		modifier = {
-			factor = 1.5
-			OR = {
-				has_trait = trait_natural_engineers
-			}
-		}
-		modifier = {
 			factor = 0.9
 			exists = owner
 			years_passed < 1
 			owner = { has_valid_civic = civic_machine_assimilator }
 			has_trait = trait_cybernetic
 		}
-		modifier = {
-			factor = 0
-			planet = {
-				owner = {
-					is_ai = yes
-					has_resource = { type = minerals amount < 500 }
-					has_monthly_income = {
-						resource = minerals
-						value < 25
-					}
-				}
+	}
+
+	inline_script = "jobs/automodding_priority_research"
+
+	promotion = {
+		time = @standard_promotion_time
+		effect = {
+			pop_amount_change_category = {
+				CATEGORY = complex_drone
+				AMOUNT = local_pop_amount
 			}
 		}
 	}

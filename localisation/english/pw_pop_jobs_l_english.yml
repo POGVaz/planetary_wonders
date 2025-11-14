@@ -237,6 +237,7 @@
     mod_job_pw_preserver_drone_per_pop_short: "\n§G+1§! £job_researcher£ per $VALUE$ £pop£"
 
     # Particle Supercollider Brain Drone
+    pw_brain_drone_particle_supercollider: "$job_pw_brain_drone_particle_supercollider$"
     job_pw_brain_drone_particle_supercollider: "Supercollider Brain Drone"
     job_pw_brain_drone_particle_supercollider_plural: "Supercollider Brain Drones"
     job_pw_brain_drone_particle_supercollider_desc: "A dedicated group of drones tasked with studying the physical mysteries of the universe at the Particle Supercollider."
@@ -246,6 +247,7 @@
     mod_job_pw_brain_drone_particle_supercollider_per_pop_short: "\n§G+1§! £job_brain_drone£ per $VALUE$ £pop£"
 
     # Domed City Brain Drone
+    pw_brain_drone_domed_city: "$job_pw_brain_drone_domed_city$"
     job_pw_brain_drone_domed_city: "Domed City Brain Drone"
     job_pw_brain_drone_domed_city_plural: "Domed City Brain Drones"
     job_pw_brain_drone_domed_city_desc: "A dedicated group of drones tasked with conducting social experiments at the Domed City. Testing the limits of deviancy."
@@ -255,6 +257,7 @@
     mod_job_pw_brain_drone_domed_city_per_pop_short: "\n§G+1§! £job_brain_drone£ per $VALUE$ £pop£"
 
     # Abyssal Crater Brain Drone
+    pw_brain_drone_abyssal_crater_test_site: "$job_pw_brain_drone_abyssal_crater_test_site$"
     job_pw_brain_drone_abyssal_crater_test_site: "Abyssal Crater Brain Drone"
     job_pw_brain_drone_abyssal_crater_test_site_plural: "Abyssal Crater Brain Drones"
     job_pw_brain_drone_abyssal_crater_test_site_desc: "A dedicated group of drones tasked with conducting engineering experiments at the Abyssal Crater."
