@@ -225,7 +225,6 @@ pw_enigma_decipher = {
 		is_enslaved = no
 		is_being_purged = no
 		is_being_assimilated = no
-		is_sapient = yes
 	}
 
 	possible_precalc = can_fill_drone_job
